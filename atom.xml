@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>差一分</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://subrige.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://subrige.github.io/"/>
   <updated>2021-02-18T09:29:34.779Z</updated>
-  <id>http://example.com/</id>
+  <id>http://subrige.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Subrige</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>后周征南唐始末（零）</title>
-    <link href="http://example.com/2021/02/18/history/"/>
-    <id>http://example.com/2021/02/18/history/</id>
+    <link href="http://subrige.github.io/2021/02/18/history/"/>
+    <id>http://subrige.github.io/2021/02/18/history/</id>
     <published>2021-02-18T09:24:50.000Z</published>
     <updated>2021-02-18T09:29:34.779Z</updated>
     
@@ -36,7 +36,7 @@
     
     
     
-    <category term="下金陵" scheme="http://example.com/tags/%E4%B8%8B%E9%87%91%E9%99%B5/"/>
+    <category term="下金陵" scheme="http://subrige.github.io/tags/%E4%B8%8B%E9%87%91%E9%99%B5/"/>
     
   </entry>
   
