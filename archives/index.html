@@ -1,288 +1,141 @@
-
-
-<!DOCTYPE html>
-<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
-
-<head>
-    <title>Archive - 差历史</title>
-<meta charset="utf-8">
-<meta name="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="Subrige">
-<meta name="description" content="A Blog Powered By Hexo">
-<meta name="keywords" content="">
-
-<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
-
+<!DOCTYPE HTML>
+<html lang="english">
+    <head>
     <meta charset="utf-8">
-    <meta name="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css?52837581">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Maverick,AlanDecode,Galileo,blog" />
+    <meta name="generator" content="Maverick 1.1" />
+    <meta name="template" content="Galileo" />
+    <link rel="alternate" type="application/rss+xml" title="Maverick &raquo; RSS 2.0" href="/feed/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Maverick &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
+    <link rel="stylesheet" href="/assets/galileo-8d8763e752.css">
+    <link rel="stylesheet" href="/assets/ExSearch/ExSearch-182e5a8868.css">
+    <link rel="stylesheet" href="/assets/katex.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <script>
+        var ExSearchConfig = {
+            root: "",
+            api: "/49790f921fec7268353e310c1d6a9a90.json"
+        }
+    </script>
+    
+<title>Archives - Maverick</title>
+<meta name="author" content="AlanDecode" />
+<meta name="description" content="This is Maverick, Theme Galileo." />
+<meta property="og:title" content="Archives - Maverick" />
+<meta property="og:description" content="This is Maverick, Theme Galileo." />
+<meta property="og:site_name" content="Maverick" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/archives/" />
+<meta property="og:image" content="Maverick" />
+<meta name="twitter:title" content="Archives - Maverick" />
+<meta name="twitter:description" content="This is Maverick, Theme Galileo." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="/android-chrome-512x512.png" />
 
-<script src="/js/loadCSS.js"></script>
-<script>
-    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
-    (function (d) {
-        var config = {
-                kitId: 'dwg1tuc',
-                scriptTimeout: 3000,
-                async: true
-            },
-            h = d.documentElement, t = setTimeout(function () {
-                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
-            s = d.getElementsByTagName("script")[0], a;
-        h.className += " wf-loading";
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-            a = this.readyState;
-            if (f || a && a != "complete" && a != "loaded") return;
-            f = true;
-            clearTimeout(t);
-            try {
-                Typekit.load(config)
-            } catch (e) {
-            }
-        };
-        s.parentNode.insertBefore(tk, s)
-    })(document);
-</script>
-<noscript>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
-</noscript>
-<meta name="generator" content="Hexo 5.3.0"></head>
-<body>
-<div id="top"></div>
-<div id="app">
-<div class="single-column-drawer-container" ref="drawer"
-     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
-    <div class="drawer-content">
-        <div class="drawer-menu">
-            <a class="a-block drawer-menu-item false" href="http://subrige.github.io">
-                Home
-            </a>
-            
-
-            
-            
-
-            
-            <a class="a-block drawer-menu-item" href="/atom.xml">
-                RSS
-            </a>
-            
-        </div>
-    </div>
-</div>
-<transition name="fade">
-    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
-</transition>
-<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
-    <div ref="navBackground" class="nav-background"></div>
-    <div class="container container-narrow nav-content">
-        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
-            <i class="material-icons">
-                menu
-            </i>
-        </button>
-        <a ref="navTitle" class="navbar-brand" href="/">
-            差历史
-        </a>
-    </div>
-</nav>
-<div class="single-column-header-container" ref="pageHead"
-     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
-    <a href="/">
-        <div class="single-column-header-title">差历史</div>
-        <div class="single-column-header-subtitle"></div>
-    </a>
-</div>
-<div ref="sideContainer" class="side-container">
-    <a class="a-block nav-head false" href="/">
-        <div class="nav-title">
-            差历史.
-        </div>
-        <div class="nav-subtitle">
-            人生寄一世<br>奄忽若飙尘
-        </div>
-    </a>
-
-    <div class="nav-link-list">
-        
-
-        
-        
-
-        
-        <a class="a-block no-tint nav-link-item" href="/atom.xml">
-            RSS
-        </a>
-        
-    </div>
 
     
-    <div class="nav-footer">
-        Proudly published with Hexo<br>
+    </head>
+    
+    <body>
         
-        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
-        
-        &copy; 2021 <a href="http://subrige.github.io">差历史</a>
-    </div>
-</div>
-<div ref="extraContainer" class="extra-container">
-    <div class="pagination">
-        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
-            <i class="material-icons pagination-action-icon">
-                keyboard_arrow_up
-            </i>
-        </a>
-
-        
-        
-
-        
-
-        
-        
-    </div>
-</div>
-
-<div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-shadow">
-        
-        
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps">
-                <div class="post-item-info-wrapper">
-                    <div class="post-item-title  post-item-title-small">
-                        
-                        <a href="/archives/2021">
-                            2021
-                        </a>
-                        
-                    </div>
+        <div class="container">
+            <header id="ga-header">
+                <div first>
+                    <aside id="ga-brand">
+                        <h1 class="brand"><a class="no-style" href="/">Maverick</a></h1>
+                        <p>This is Maverick, Theme Galileo.</p>
+                    </aside>
                 </div>
+                <div second id="ga-nav">
+                    <nav class="navs">
+                        <ul><li><a class="ga-highlight" href="/" target="_self">Home</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">Archives</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/about/" target="_self">About</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">Search</a></li></ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="wrapper">
+                
+<main>    
+    
+
+<section id="ga-archive_list" class="ga-section" data-title="Archives">
+    <ul>
+        
+        <li>
+            <h1><a target="_self" class="ga-highlight" href="/archives/overview/">Overview of Maverick</a></h1>
+            <time class="ga-mono">
+                2019-12-11
+            </time>
+        </li>
+        
+        <li>
+            <h1><a target="_self" class="ga-highlight" href="/archives/typography/">Typography</a></h1>
+            <time class="ga-mono">
+                2018-11-09
+            </time>
+        </li>
+        
+    </ul>
+</section>
+
+<section class="ga-section ga-mono" id="ga-pager">
+    
+    <span>Page 1 of 1</span>
+    
+</section>
+
+
+</main>
+
+                <footer class="ga-mono" id="ga-footer">
+                    <section>
+                        <span id="ga-uptime"></span>
+                        <span class="brand">Maverick</span>
+                    </section>
+                    <section>
+                        <p class="copyright">
+                            <span>Copyright © 2021 AlanDecode</span>
+                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
+                        </p>
+                        <div class="copyright">
+                            <span class="footer-addon">
+                                
+                            </span>
+                            <nav class="social-links">
+                                <ul><li><a class="no-style" title="Twitter" href="https://twitter.com/AlanDecode" target="_blank"><i class="gi gi-twitter"></i>Twitter</a></li><span class="separator">·</span><li><a class="no-style" title="GitHub" href="https://github.com/AlanDecode" target="_blank"><i class="gi gi-github"></i>GitHub</a></li><span class="separator">·</span><li><a class="no-style" title="Weibo" href="https://weibo.com/5245109677/" target="_blank"><i class="gi gi-weibo"></i>Weibo</a></li></ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <script>
+                        var site_build_date = "2019-12-06T12:00+08:00"
+                    </script>
+                    <script src="/assets/galileo-7c8cea54ab.js"></script>
+                </footer>
             </div>
         </div>
-        
-
-        <a href="/2021/02/18/song1/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            陈桥兵变的光与影（二）
-                        </div>
-                        <div class="post-item-meta">
-                            2021-02-18
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/2021/02/18/song/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            陈桥兵变的光与影（一）
-                        </div>
-                        <div class="post-item-meta">
-                            2021-02-18
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/2021/02/18/history2/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            后周征南唐始末（二）
-                        </div>
-                        <div class="post-item-meta">
-                            2021-02-18
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/2021/02/18/history1/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            后周征南唐始末（一）
-                        </div>
-                        <div class="post-item-meta">
-                            2021-02-18
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/2021/02/18/history/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            后周征南唐始末（零）
-                        </div>
-                        <div class="post-item-meta">
-                            2021-02-18
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
     </div>
-    
 
-    <div class="single-column-footer">
-    Proudly published with Hexo<br>
-    
-    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
-    
-    &copy; 2021 <a href="http://subrige.github.io">差历史</a>
-</div>
-</div>
+    <!--katex-->
+    <script defer src="/assets/katex.min.js"></script>
+    <script>
+    mathOpts = {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    };
+    </script>
+    <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
-        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
-        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
-        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js?23338474"></script>
+    <script src="/assets/ExSearch/jquery.min.js"></script>
+    <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
 
-</body>
+    
+    </body>
 </html>
