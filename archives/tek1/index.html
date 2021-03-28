@@ -62,12 +62,12 @@
                 </time>
             </div>
             <div class="prism-content-body">
-                <p>记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup>我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。</p><p>前两天看到了季悠然带佬新开发的<a href="https://gundam.exia.xyz/archives/589.html">W主题</a><del>糟了是心动的感觉</del>，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。</p><p>笔者php零基础（泪</p><h1><strong>全站字体替换为思源宋体</strong></h1>
+                <p>记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup>我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。</p><p>前两天看到了季悠然带佬新开发的<a href="https://gundam.exia.xyz/archives/589.html">W主题</a><del>糟了是心动的感觉</del>，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。</p><p>笔者php零基础（泪</p><h2><strong>全站字体替换为思源宋体</strong></h2>
 <p>最近比较喜欢宋体排版，易读性强，和主题本身的白色背景比较匹配，就决定将全站字体替换为思源宋体。在style.css中。</p><figure  style="flex: 82.4074074074074" ><img width="1424" height="864" src="/archives/assets/02263ebec7410f98fa1165c9cca97ff5.png" alt="1999657778"/></figure>
 其中有两个标签需要去重新定义以替换字体，分别是font-family和src。font-family更改为思源宋体的字标；src即为source，字体文件路径。这里只需要把路径替换成思源宋体的otf/ttf路径。<blockquote>
 <p>附链接：</p><p>font-family:<a href="https://www.jianshu.com/p/d1f2382a9252">https://www.jianshu.com/p/d1f2382a9252</a></p></blockquote>
-<h1><strong>评论栏位置移动</strong></h1>
-<p>W主题评论栏原本是放在侧栏中的，作者的解释是「能够一边看文章一边看评论。」但出于个人审美考虑，想将评论栏放到文章下端。</p><p>评论集成在comment.php中，其在slidebar.php中有所引用，将其中引用comment.php的语句整体移动到post/page.php中去。</p><figure  style="flex: 208.18713450292398" ><img width="1424" height="342" src="/archives/assets/7184c1df08debd49985a5bcece8a1b95.png" alt="2062619888"/></figure><h1><strong>加入阅读时间估计和阅读人数统计</strong></h1>
+<h2><strong>评论栏位置移动</strong></h2>
+<p>W主题评论栏原本是放在侧栏中的，作者的解释是「能够一边看文章一边看评论。」但出于个人审美考虑，想将评论栏放到文章下端。</p><p>评论集成在comment.php中，其在slidebar.php中有所引用，将其中引用comment.php的语句整体移动到post/page.php中去。</p><figure  style="flex: 208.18713450292398" ><img width="1424" height="342" src="/archives/assets/7184c1df08debd49985a5bcece8a1b95.png" alt="2062619888"/></figure><h2><strong>加入阅读时间估计和阅读人数统计</strong></h2>
 <blockquote>
 <p>阅读时间估计功能来自<a href="https://spoience.com/reading-time-estimate.html%E3%80%82">https://spoience.com/reading-time-estimate.html%E3%80%82</a></p><p>阅读人数统计功能来自<a href="https://sunpma.com/81.html%E3%80%82">https://sunpma.com/81.html%E3%80%82</a></p></blockquote>
 <p>按照文章说的来就行。</p><section class="footnotes">
