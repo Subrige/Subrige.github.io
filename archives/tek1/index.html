@@ -24,18 +24,18 @@
 
     </script>
     
-<title>Overview of Maverick - 差一分</title>
-<meta name="author" content="AlanDecode" />
-<meta name="description" content="Maverick is a static blog generator built with python." />
-<meta property="og:title" content="Overview of Maverick - 差一分" />
-<meta property="og:description" content="Maverick is a static blog generator built with python." />
+<title>关于我那半吊子的博客魔改｜信息笔记 - 差一分</title>
+<meta name="author" content="差一分" />
+<meta name="description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
+<meta property="og:title" content="关于我那半吊子的博客魔改｜信息笔记 - 差一分" />
+<meta property="og:description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
 <meta property="og:site_name" content="差一分" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/archives/overview/" />
+<meta property="og:url" content="/archives/tek1/" />
 <meta property="og:image" content="" />
-<meta property="article:published_time" content="2019-12-11T22:23:00+08.00" />
-<meta name="twitter:title" content="Overview of Maverick - 差一分" />
-<meta name="twitter:description" content="Maverick is a static blog generator built with python." />
+<meta property="article:published_time" content="2020-12-13T23:41:00+08.00" />
+<meta name="twitter:title" content="关于我那半吊子的博客魔改｜信息笔记 - 差一分" />
+<meta name="twitter:description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -55,36 +55,35 @@
 <main>
     <section class="prism-section row" id="prism__content">
         <article class="yue col-md-8 offset-md-2">
-            <h1 class="prism-post-title">Overview of Maverick</h1>
+            <h1 class="prism-post-title">关于我那半吊子的博客魔改｜信息笔记</h1>
             <div class="prism-post-time">
                 <time class="text-uppercase">
-                    December 11 2019
+                    December 13 2020
                 </time>
             </div>
             <div class="prism-content-body">
-                <h2>Overview</h2>
-<p>Maverick is a static blog generator built with python. Like Hexo and Jekyll, it takes Markdown(<code>.md</code>) files as input, and output beautifully formated and well structured website pages(<code>.html</code>). It has a lot built-in useful features(feed, search, sitemap, etc.), with extended Markdown syntax and enhanced image processing pipeline.</p><p>If you are tired of intricate plugins and complicated configurations, just give Maverick a try. You focus on writing, let Maverick take care of the rest.</p><p>Pull requests are surely welcome. If you have any questions or suggestions, please head to <a href="https://github.com/AlanDecode/Maverick/issues">issue area</a> and leave us a message. Before that, let's finish this document.</p><h2>Usage</h2>
-<p>Maverick is build with modern Python, currently at least <strong>Python 3.5</strong> is required, make sure you have it installed on your machine.</p><h3>Install</h3>
-<p>Clone this repository:</p><div class="highlight"><pre><span></span>git clone https://github.com/AlanDecode/Maverick.git ./Maveric <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ./Maveric
-</pre></div>
-<p>Install all dependencies:</p><div class="highlight"><pre><span></span>pip install -r prod_req.txt
-</pre></div>
-<p>If error occurs, please verify your Python and pip version. Then edit the default configuration file:</p><div class="highlight"><pre><span></span>vi ./config.py
-</pre></div>
-<p>For now let's use the default settings. Type this command in your terminal:</p><div class="highlight"><pre><span></span>python ./build.py
-</pre></div>
-<p>...and a sample static site is generated in <code>test_dist</code> folder! You can then upload them to GitHub Pages or any other server.</p><h3>Generate your own site</h3>
-<p>By default, Maverick searches all <code>.md</code> files recursively under <code>test_src</code> folder, so put your Markdown files in it and run <code>python ./build.py</code> then everything you need will be in <code>test_dist</code> folder. Maverick uses so-called <code>YAML frontmatter</code> to get meta data of your articles, if you have tried Hexo or Jekyll, you should be familiar with it; if you don't, let's look into it now.</p><p>......</p><p>Read the full documentation <a href="https://github.com/AlanDecode/Maverick">here</a>.</p><h2>License</h2>
-<p>MIT © <a href="https://github.com/AlanDecode">AlanDecode</a>.</p>
+                <p>之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。</p><blockquote>
+<p>Warning：这可能会让你的网站有被墙的风险，因此有条件的最好租两台服务器，一台搭网站，一台搭梯子。（在下穷</p></blockquote>
+<p>首先上Vultr官网去购买服务器。Vultr的价格还挺贵的，这里不要被坑：一开始默认选的是10刀/月的套餐，这简直是要杀猪啊，但其实看左边，还有一个5刀/月的套餐，选那个就行，完全够用。</p><p>这里使用的是CentOS 7搭建的，用CentOS 7还是比较稳定的。我的第一台服务器用的是CentOS 8，就装不上去SSR，真的是很难受的一件事情。</p><p>我用的是MacOS，因此这里也只说MacOS的搭建过程。其实Windows的过程也差不多，只是第一步需要下载Xshell去登录服务器，这里请自行查询。</p><p>先登录服务器：</p><p><code>$ ssh root@ip</code> 此处的ip地址替换成你的VPS的。如图：</p><figure  style="flex: 70.60041407867494" ><img width="1364" height="966" src="https://subrige.xyz/usr/uploads/2020/07/1609636516.png#vwid=1364&vhei=966" alt="输入ip"/></figure><p>接下来会让你输入密码。第一次使用命令行的同志需要注意，填写密码时命令行不会显示任何东西，不要以为你没填进去，实际上你已经填进去了。</p><figure  style="flex: 70.60041407867494" ><img width="1364" height="966" src="https://subrige.xyz/usr/uploads/2020/07/3043995774.png#vwid=1364&vhei=966" alt="输入密码"/></figure><p>后面，顺利的话就可以进入服务器的命令行界面了。</p><h2><strong>安装SSR本体</strong></h2>
+<p>接下来输入这段命令：</p>
+<pre><code>wget –no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh 
+chmod +x shadowsocksR.sh ./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
+</code></pre>
+<p>在过程中可能需要你确认安装，回车即可。</p><p>后面会让你设置几项东西：</p><p>·服务器密码：你想设什么，顺眼就行。</p><p>·服务器端口：一般为默认就行，自然，你也可以想设什么设什么。</p><p>·加密方式：选择<code>aes-256-cfb</code>。</p><p>其余项默认回车即可，接下来又进入了一段安装阶段。</p><p><strong>安装完之后，会出现标红的四个参数，都是后面配置SSR本地端需要的，截屏或者记下来。</strong></p><h2><strong>BBR加速</strong></h2>
+<p>BBR加速可以让你的梯子更快。你如果可以接受现在的速度，可以跳过这一步。</p><p>输入这段命令：</p>
+<pre><code>wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh
+</code></pre>
+<p>之后又会安装一段时间。安装完后会让你重启，输入y，回车即可。</p><p>重启服务器后需要重新连接，这里要重复最开始的连接服务器的步骤。</p><p>这之后，输入这段代码重启SS服务：</p><p><code>/etc/init.d/shadowsocks restart</code></p><p>在服务器端的配置已经结束。</p><h2><strong>最后，在本地配置SS客户端</strong></h2>
+<p>SS客户端其实蛮丰富的。Windows端可以下载<a href="https://pan.baidu.com/s/1MdSIrngP_So1617Usz5UAw">Shadowsocks（附Xshell大礼包）</a>，MacOS端可以去Github Release下载ShadowsocksX-NG。</p><p>手机端，iOS可以下载Potatso Lite。安卓也有对应的Shadowsocks客户端。</p><p>上面这三项的配置大同小异。都只需要创建服务器，然后填入之前留存的IP地址，端口，加密方式，密码即可。</p>
             </div>
         </article>
         <div class="prism-post-meta col-md-8 offset-md-2">
-    <span>AlanDecode</span>
+    <span>差一分</span>
     
     <span>/</span>
     <span>
-        <a class="category no-link" href="/category/Maverick/" target="_self">
-        Maverick
+        <a class="category no-link" href="/category/%E4%BF%A1%E6%81%AF%E7%AC%94%E8%AE%B0/" target="_self">
+        信息笔记
         </a>
     </span>
     
@@ -92,11 +91,7 @@
     <span>/</span>
     
     <span class="prism-tag">
-        <a class="no-link" href="/tag/Coding/" target="_self">#Coding</a>
-    </span>
-    
-    <span class="prism-tag">
-        <a class="no-link" href="/tag/Development/" target="_self">#Development</a>
+        <a class="no-link" href="/tag/%E5%8D%9A%E5%AE%A2%E4%BA%8B/" target="_self">#博客事</a>
     </span>
     
     
@@ -109,12 +104,12 @@
     <ul>
         
         <li class="next">
-            <a class="no-link" href="/archives/history1/" target="_self" title="关于石敬瑭世系的考证｜历史杂谈"><i class="fa fa-chevron-left" aria-hidden="true"></i>Newer</a>
+            <a class="no-link" href="/archives/mis/" target="_self" title="记张某｜Miscellaneous"><i class="fa fa-chevron-left" aria-hidden="true"></i>Newer</a>
         </li>
         
         
-        <li class="prev text-muted">
-            <span title="Viewing the oldest one.">Older<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+        <li class="prev">
+            <a class="no-link" href="/archives/capture3/" target="_self" title="为无可慰藉之人提供慰藉｜书摘">Older<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
         </li>
         
     </ul>

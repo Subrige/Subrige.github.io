@@ -13,21 +13,126 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
     <loc>/about/</loc>
-    <lastmod>2017-06-28</lastmod>
+    <lastmod>2021-03-28</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
 </url>
 
 <url>
-    <loc>/archives/overview/</loc>
-    <lastmod>2019-12-11</lastmod>
+    <loc>/archives/history7/</loc>
+    <lastmod>2020-12-29</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
-    <loc>/archives/typography/</loc>
-    <lastmod>2018-11-09</lastmod>
+    <loc>/archives/mis/</loc>
+    <lastmod>2020-12-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/tek1/</loc>
+    <lastmod>2020-12-13</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/capture3/</loc>
+    <lastmod>2020-09-20</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history6/</loc>
+    <lastmod>2020-08-06</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/story1/</loc>
+    <lastmod>2020-07-27</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/story1/</loc>
+    <lastmod>2020-07-21</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history5/</loc>
+    <lastmod>2020-07-10</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history4/</loc>
+    <lastmod>2020-07-09</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/tek/</loc>
+    <lastmod>2020-07-08</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/capture1/</loc>
+    <lastmod>2020-07-06</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history3/</loc>
+    <lastmod>2020-06-08</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history2/</loc>
+    <lastmod>2020-06-03</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/book1/</loc>
+    <lastmod>2020-05-08</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/reality/</loc>
+    <lastmod>2020-04-29</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/history1/</loc>
+    <lastmod>2020-04-21</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/overview/</loc>
+    <lastmod>2019-12-11</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
 </url>
