@@ -19,23 +19,23 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/7b8e3e426871bdf0879123e69a142b0d.json"
+            api: "/1ddebbf512b74d1130582dc17cfe6083.json"
         }
 
     </script>
     
 <title>关于我那半吊子的博客魔改｜信息笔记 - 差一分</title>
 <meta name="author" content="差一分" />
-<meta name="description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
+<meta name="description" content="记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」1我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。前两天看到了季悠然带佬新开发的W主题糟了是心动的感觉，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。笔者php零基础（泪全站字体替换为思源宋体" />
 <meta property="og:title" content="关于我那半吊子的博客魔改｜信息笔记 - 差一分" />
-<meta property="og:description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
+<meta property="og:description" content="记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」1我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。前两天看到了季悠然带佬新开发的W主题糟了是心动的感觉，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。笔者php零基础（泪全站字体替换为思源宋体" />
 <meta property="og:site_name" content="差一分" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/tek1/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2020-12-13T23:41:00+08.00" />
 <meta name="twitter:title" content="关于我那半吊子的博客魔改｜信息笔记 - 差一分" />
-<meta name="twitter:description" content="之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。" />
+<meta name="twitter:description" content="记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」1我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。前两天看到了季悠然带佬新开发的W主题糟了是心动的感觉，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。笔者php零基础（泪全站字体替换为思源宋体" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -62,19 +62,20 @@
                 </time>
             </div>
             <div class="prism-content-body">
-                <p>之前一直都用的是Nord VPN翻墙上网，但由于一些众所周知的原因，一直都很不稳定。刚好在半个月前在Vultr租了一台服务器搭网站，就拿来用了。</p><blockquote>
-<p>Warning：这可能会让你的网站有被墙的风险，因此有条件的最好租两台服务器，一台搭网站，一台搭梯子。（在下穷</p></blockquote>
-<p>首先上Vultr官网去购买服务器。Vultr的价格还挺贵的，这里不要被坑：一开始默认选的是10刀/月的套餐，这简直是要杀猪啊，但其实看左边，还有一个5刀/月的套餐，选那个就行，完全够用。</p><p>这里使用的是CentOS 7搭建的，用CentOS 7还是比较稳定的。我的第一台服务器用的是CentOS 8，就装不上去SSR，真的是很难受的一件事情。</p><p>我用的是MacOS，因此这里也只说MacOS的搭建过程。其实Windows的过程也差不多，只是第一步需要下载Xshell去登录服务器，这里请自行查询。</p><p>先登录服务器：</p><p><code>$ ssh root@ip</code> 此处的ip地址替换成你的VPS的。如图：</p><figure  style="flex: 70.60041407867494" ><img width="1364" height="966" src="https://subrige.xyz/usr/uploads/2020/07/1609636516.png#vwid=1364&vhei=966" alt="输入ip"/></figure><p>接下来会让你输入密码。第一次使用命令行的同志需要注意，填写密码时命令行不会显示任何东西，不要以为你没填进去，实际上你已经填进去了。</p><figure  style="flex: 70.60041407867494" ><img width="1364" height="966" src="https://subrige.xyz/usr/uploads/2020/07/3043995774.png#vwid=1364&vhei=966" alt="输入密码"/></figure><p>后面，顺利的话就可以进入服务器的命令行界面了。</p><h2><strong>安装SSR本体</strong></h2>
-<p>接下来输入这段命令：</p>
-<pre><code>wget –no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh 
-chmod +x shadowsocksR.sh ./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
-</code></pre>
-<p>在过程中可能需要你确认安装，回车即可。</p><p>后面会让你设置几项东西：</p><p>·服务器密码：你想设什么，顺眼就行。</p><p>·服务器端口：一般为默认就行，自然，你也可以想设什么设什么。</p><p>·加密方式：选择<code>aes-256-cfb</code>。</p><p>其余项默认回车即可，接下来又进入了一段安装阶段。</p><p><strong>安装完之后，会出现标红的四个参数，都是后面配置SSR本地端需要的，截屏或者记下来。</strong></p><h2><strong>BBR加速</strong></h2>
-<p>BBR加速可以让你的梯子更快。你如果可以接受现在的速度，可以跳过这一步。</p><p>输入这段命令：</p>
-<pre><code>wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh
-</code></pre>
-<p>之后又会安装一段时间。安装完后会让你重启，输入y，回车即可。</p><p>重启服务器后需要重新连接，这里要重复最开始的连接服务器的步骤。</p><p>这之后，输入这段代码重启SS服务：</p><p><code>/etc/init.d/shadowsocks restart</code></p><p>在服务器端的配置已经结束。</p><h2><strong>最后，在本地配置SS客户端</strong></h2>
-<p>SS客户端其实蛮丰富的。Windows端可以下载<a href="https://pan.baidu.com/s/1MdSIrngP_So1617Usz5UAw">Shadowsocks（附Xshell大礼包）</a>，MacOS端可以去Github Release下载ShadowsocksX-NG。</p><p>手机端，iOS可以下载Potatso Lite。安卓也有对应的Shadowsocks客户端。</p><p>上面这三项的配置大同小异。都只需要创建服务器，然后填入之前留存的IP地址，端口，加密方式，密码即可。</p>
+                <p>记得很久之前看一位带佬的博客十周年感言，其中有这么一句话：「当初搭建博客的时候总是想要弄的漂漂亮亮的，毕竟打扫好屋子再请客嘛。但写博客一久，就总容易偏向这么两个极端：一个极端是将博客弄的非常好看，另一个极端是把博客弄的非常简约。」<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup>我大概就偏向了天平中简约的那一端。越来越羡慕那种纯文字排版的博客，但由于考试原因，也是因为没有钟意的主题，一直没有办法付诸实现。这两天月考考完，就琢磨着想要把博客重新设计一下。</p><p>前两天看到了季悠然带佬新开发的<a href="https://gundam.exia.xyz/archives/589.html">W主题</a><del>糟了是心动的感觉</del>，立即更换成了这个主题。但其中有些与我的审美有差异的地方，就进行了小小的魔改。本篇文章就是以魔改记录为目的写下来的。</p><p>笔者php零基础（泪</p><h1><strong>全站字体替换为思源宋体</strong></h1>
+<p>最近比较喜欢宋体排版，易读性强，和主题本身的白色背景比较匹配，就决定将全站字体替换为思源宋体。在style.css中。</p><figure  style="flex: 82.4074074074074" ><img width="1424" height="864" src="/archives/assets/02263ebec7410f98fa1165c9cca97ff5.png" alt="1999657778"/></figure>
+其中有两个标签需要去重新定义以替换字体，分别是font-family和src。font-family更改为思源宋体的字标；src即为source，字体文件路径。这里只需要把路径替换成思源宋体的otf/ttf路径。<blockquote>
+<p>附链接：</p><p>font-family:<a href="https://www.jianshu.com/p/d1f2382a9252">https://www.jianshu.com/p/d1f2382a9252</a></p></blockquote>
+<h1><strong>评论栏位置移动</strong></h1>
+<p>W主题评论栏原本是放在侧栏中的，作者的解释是「能够一边看文章一边看评论。」但出于个人审美考虑，想将评论栏放到文章下端。</p><p>评论集成在comment.php中，其在slidebar.php中有所引用，将其中引用comment.php的语句整体移动到post/page.php中去。</p><figure  style="flex: 208.18713450292398" ><img width="1424" height="342" src="/archives/assets/7184c1df08debd49985a5bcece8a1b95.png" alt="2062619888"/></figure><h1><strong>加入阅读时间估计和阅读人数统计</strong></h1>
+<blockquote>
+<p>阅读时间估计功能来自<a href="https://spoience.com/reading-time-estimate.html%E3%80%82">https://spoience.com/reading-time-estimate.html%E3%80%82</a></p><p>阅读人数统计功能来自<a href="https://sunpma.com/81.html%E3%80%82">https://sunpma.com/81.html%E3%80%82</a></p></blockquote>
+<p>按照文章说的来就行。</p><section class="footnotes">
+<ol>
+<li id="fn-1"><p>这句话所说的两个极端并没有褒贬性。<a href="#fnref-1" class="footnote">&#8617;</a></p></li>
+</ol>
+</section>
+
             </div>
         </article>
         <div class="prism-post-meta col-md-8 offset-md-2">
@@ -96,6 +97,9 @@ chmod +x shadowsocksR.sh ./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
     
     
     
+    <span>/</span>
+    <span class="leancloud_visitors" id="/archives/tek1/" data-flag-title="关于我那半吊子的博客魔改｜信息笔记"><span class="leancloud-visitors-count"></span> Views</span>
+    
 </div>
     </section>
 
@@ -116,6 +120,21 @@ chmod +x shadowsocksR.sh ./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
 </section>
 
 
+    
+    <script>
+        var initValine = function() {
+            new Valine({"enable": true, "el": "#vcomments", "appId": "44UvMeAKxEd5kmLLCiYQRayg-gzGzoHsz", "appKey": "131X7hHV2RNIiwUxSdwD7Ixe", "visitor": true, "recordIP": true});
+        }
+
+    </script>
+    <script defer src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
+    <div class="prism-comment-section container" id="prism__comment">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="vcomments"></div>
+            </div>
+        </div>
+    </div>
     
 
 </main>
